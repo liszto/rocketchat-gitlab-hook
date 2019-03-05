@@ -73,6 +73,7 @@ class Script { // eslint-disable-line
 					result = this.pipelineEvent(request.content);
 					break;
 				case 'Build Hook':
+				case 'Job Hook':
 					result = this.buildEvent(request.content);
 					break;
 				case 'Wiki Page Hook':
